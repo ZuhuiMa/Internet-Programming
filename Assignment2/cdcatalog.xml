@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by et8 (et8) -->
+<!-- Edited with XML Spy v2005 (http://www.altova.com) -->
+<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>
+<cdcatalog>
+    <cd id="0001">
+        <title>Empire Burlesque</title>
+        <artist>Bob Dylan</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>10.90</price>
+        <year>1985</year>
+        <quantity>5</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0002">
+        <title>Hide your heart</title>
+        <artist>Bonnie Tyler</artist>
+        <country>UK</country>
+        <company>CBS Records</company>
+        <price>9.90</price>
+        <year>1988</year>
+        <quantity>15</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0003">
+        <title>Greatest Hits</title>
+        <artist>Dolly Parton</artist>
+        <country>USA</country>
+        <company>RCA</company>
+        <price>9.90</price>
+        <year>1982</year>
+        <quantity>5</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0004">
+        <title>Still got the blues</title>
+        <artist>Gary Moore</artist>
+        <country>UK</country>
+        <company>Virgin records</company>
+        <price>10.20</price>
+        <year>1990</year>
+        <quantity>5</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0005">
+        <title>Eros</title>
+        <artist>Eros Ramazzotti</artist>
+        <country>EU</country>
+        <company>BMG</company>
+        <price>9.90</price>
+        <year>1997</year>
+        <quantity>24</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0006">
+        <title>One night only</title>
+        <artist>Bee Gees</artist>
+        <country>UK</country>
+        <company>Polydor</company>
+        <price>10.90</price>
+        <year>1998</year>
+        <quantity>5</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0007">
+        <title>Sylvias Mother</title>
+        <artist>Dr.Hook</artist>
+        <country>UK</country>
+        <company>CBS</company>
+        <price>8.10</price>
+        <year>1973</year>
+        <quantity>5</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0008">
+        <title>Maggie May</title>
+        <artist>Rod Stewart</artist>
+        <country>UK</country>
+        <company>Pickwick</company>
+        <price>8.50</price>
+        <year>1990</year>
+        <quantity>5</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0009">
+        <title>Romanza</title>
+        <artist>Andrea Bocelli</artist>
+        <country>EU</country>
+        <company>Polydor</company>
+        <price>10.80</price>
+        <year>1996</year>
+        <quantity>5</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+    <cd id="0010">
+        <title>When a man loves a woman</title>
+        <artist>Percy Sledge</artist>
+        <country>USA</country>
+        <company>Atlantic</company>
+        <price>8.70</price>
+        <year>1987</year>
+        <quantity>3</quantity>
+        <photo>default.jpg</photo>
+    </cd>
+</cdcatalog>

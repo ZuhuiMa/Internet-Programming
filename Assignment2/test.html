@@ -1,10 +1,169 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    //定义全局变量
+    cdcatalog = loadXML("cdcatalog.xml");
+    root = cdcatalog.documentElement;
+    cd = root.getElementsByTagName("cd");
+    valArr = [];
+
+    function onloadFun() {
+        //valArr赋值
+        $('#show').find("th").each(function(i) {
+            valArr.push($.trim($(this).text()));
+        });
+        loadXMLFun();
+    }
+     //创建xmldom对象
+
+    function loadXML(xmlFile) {
+        var xmlDom = null;
+        try {
+            //xmlhttp方式，支持火狐、chrome、oprea等浏览器，但不可跨域
+            var xmlhttp = new window.XMLHttpRequest();
+            xmlhttp.open("GET", xmlFile, false);
+            xmlhttp.send(null);
+            if (xmlhttp.status == 200) {
+                xmlDom = xmlhttp.responseXML;
+            } else {
+                //传入的是XML字符串而非XML地址时非IE浏览器处理
+                var parseXml = new DOMParser();
+                var xmlDom = parseXml.parseFromString(xmlFile, "text/xml");
+            }
+        } catch (ex) {
+            //传入的是XML字符串而非XML地址时非IE浏览器处理
+            var parseXml = new DOMParser();
+            var xmlDom = parseXml.parseFromString(xmlFile, "text/xml");
+
+        }
+        return xmlDom;
+    }
+
+    function loadXMLFun() {
+        fillTable(cd);
+    }
+
+    function fillTable(list) {
+        var trs = [];
+        var tds = [];
+
+        for (var x = 0; x < list.length; x++) {
+            trDom = $('<tr></tr>');
+            for (var i = 0; i < valArr.length; i++) {
+                $('<td >' + getValue(list, x, valArr[i]) + '</td>').appendTo(trDom);
+                trs.push(trDom);
+            }
+        }
+        for (var j = 0; j < trs.length; j++) {
+            $(trs[j]).appendTo($('#show'));
+        }
+
+    }
+
+    function getValue(list, i, key) {
+        try {
+            if ("id" == key) {
+                return list[i].getAttribute(key);
+            } else if ("photo" == key) {
+                imgsrc = list[i].getElementsByTagName(key)[0].childNodes[0].nodeValue;
+                return '<img src="' + imgsrc + '" />';
+            } else {
+                return list[i].getElementsByTagName(key)[0].childNodes[0].nodeValue;
+            }
+        } catch (ex) {
+            return "";
+        }
+    }
+
+
+    function search() {
+        var searchStrLow = $.trim($("#artistText").val().toLowerCase());
+        var flag = false;
+        var tmpArray = [];
+        $("table tbody tr").eq(0).nextAll().remove();
+        /*$(root).find('cd').each(function() {
+    var artistLow = $(this).find("artist").text().toLowerCase();
+    if (artistLow.indexOf(searchStrLow) != -1) {
+        fillTable($(this));
+        flag = true;
+    }
+});
+*/
+        for (var i = 0; i < cd.length; i++) {
+            var artistLow = $.trim(cd[i].getElementsByTagName("artist")[0].childNodes[0].nodeValue.toLowerCase());
+            if (artistLow.indexOf(searchStrLow) != -1) {
+                tmpArray.push(cd[i]);
+                flag = true;
+            }
+        }
+
+        fillTable(tmpArray);
+        if (flag == false) {
+            alert("查询不到结果!")
+        }
+
+
+    }
+
+    function modi() {
+        $("table tbody tr").eq(0).nextAll().remove();
+        //修改第3张cd的数量为1
+        root.getElementsByTagName("quantity")[2].childNodes[0].nodeValue = "1";
+        fillTable(cd);
+    }
+
+    function add() {
+        var tmp;
+        var lines = ++cd.length;
+        $("table tbody tr").eq(0).nextAll().remove();
+        //创建一个cd节点
+        newElem = cdcatalog.createElement("cd");
+        for (var i = 0; i < valArr.length; i++) {
+            if ("id" == valArr[i]) {
+                newElem.setAttribute("id", "00" + lines); //设置该节点id属性
+            } else if ("photo" == valArr[i]) {} else {
+                tmp = cdcatalog.createElement(valArr[i]);
+                tmp.textContent = valArr[i];
+                newElem.appendChild(tmp);
+            }
+        }
+        root.appendChild(newElem);
+        fillTable(cd);
+    }
+
+    function remove() {
+        root.children[0].remove();
+        $("table tbody tr").eq(0).nextAll().remove();
+        fillTable(cd);
+    }
+</script>
+<body onload="onloadFun()"> <span>输入artist:</span>
+ 
+  <input id="artistText" type="text" />
+  <input id="searchButton" type="button" value="搜索" onclick="search()" />
+  <input id="addButton" type="button" value="添加" onclick="add()" />
+  <input id="modiButton" type="button" value="修改" onclick="modi()" />
+  <input id="modiButton" type="button" value="删除" onclick="remove()" />
+   <h2> CD </h1>
+  <table border="1px dashed #999999" id="show" align="center" bgcolor="#f9f9f9">
+       <tbody>
+      <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>artist</th>
+          <th>country</th>
+          <th>company</th>
+          <th>price</th>
+          <th>year</th>
+          <th>quantity</th>
+          <th>photo</th>
+      </tr>
+      </tbody>
+  </table>
 </body>
 </html>
