@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CARS>
+  <CAR id="1">
+    <CATEGORY>Seden</CATEGORY>
+    <AVAILABILITY>True</AVAILABILITY>
+    <BRAND>BMW</BRAND>
+    <MODEL>320i</MODEL>
+    <MODEL_YEAR>2019</MODEL_YEAR>
+    <MILEAGE>5230</MILEAGE>
+    <FUEL_TYPE>petrol</FUEL_TYPE>
+    <SEATS>4</SEATS>
+    <PRICE_PER_DAY>320</PRICE_PER_DAY>
+    <DESCRIPTION>The BMW 320i is the essence of riding pleasure. It was built for pulsing cities, and for all those who simply love riding motorcycles. Manoeuvrable, easy to handle and sporty at the same time – you'll get to work, the next hotspot or out of the city in a breeze.</DESCRIPTION>
+  </CAR>
+</CARS>
