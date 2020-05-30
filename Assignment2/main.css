@@ -50,12 +50,16 @@ a {
 .content .title {
   font-weight: bold;
   font-size: large;
+  text-align: center;
 }
 .content .car_info {
   border-collapse: separate;
-  border-spacing: 5px 5px;
+  border-spacing:3px 3px;
   border: 1px dashed rgb(214, 214, 214);
 }
 .content div {
-  height: 130px;
+  height: 140px;
+  width: 370px;
+  /* overflow-y:scroll; */
+  
 }
