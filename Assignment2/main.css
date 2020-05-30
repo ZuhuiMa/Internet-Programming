@@ -42,7 +42,9 @@ a {
   color: black;
 }
 .content img {
-  width: 200px;
+  width: auto;
+  position: relative;
+  left: 10px;
   height: 200px;
 }
 .content .title {
@@ -53,8 +55,7 @@ a {
   border-collapse: separate;
   border-spacing: 5px 5px;
   border: 1px dashed rgb(214, 214, 214);
-  
 }
-.content .car_info td {
-    
+.content div {
+  height: 130px;
 }

@@ -18,7 +18,7 @@ for ($i = 0; $i <= $row_num; $i++) {
     $SEATS = $car['SEATS'];
     $PRICE_PER_DAY = $car['PRICE_PER_DAY'];
     $DESCRIPTION = $car['DESCRIPTION'];
-    echo "<td ><table class='car_info'>";
+    echo "<td><table class='car_info'>";
     echo "<tr><td><img src='./images/" . $MODEL . ".jpg' alt=''</td></tr>";
     echo "<tr><td class ='title'>$BRAND-$MODEL-$MODEL_YEAR</td></tr>";
     echo "<tr><td class ='data'><b>mileage:</b>$MILEAGE kms</td></tr>";
@@ -26,7 +26,7 @@ for ($i = 0; $i <= $row_num; $i++) {
     echo "<tr><td class ='data'><b>seats:</b>$SEATS</td></tr>";
     echo "<tr><td class ='data'><b>price per day:</b>$PRICE_PER_DAY</td></tr>";
     echo "<tr><td class ='data'><b>avilability:</b>$AVAILABILITY</td></tr>";
-    echo "<tr><td class ='data'><b>description:</b>$DESCRIPTION</td></tr>";
+    echo "<tr><td class ='data'><div><b>description:</b>$DESCRIPTION<div></td></tr>";
     echo '<tr><td><input type="button" value="Add to cart" class="button" ';
     echo "onclick = ";
     echo '"window.location.href=';
