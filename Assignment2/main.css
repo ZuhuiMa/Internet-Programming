@@ -1,0 +1,60 @@
+.header {
+  background-color: black;
+  width: auto;
+  height: 60px;
+}
+.header p {
+  color: white;
+  position: absolute;
+  left: 42%;
+  font-size: larger;
+  top: 8px;
+}
+.header .button {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+.header #logo {
+  position: relative;
+  left: 1px;
+  top: 1px;
+  height: 58px;
+  width: 79px;
+}
+.button {
+  width: 110px;
+  height: 40px;
+  border-width: 0px;
+  border-radius: 3px;
+  background: #1e90ff;
+  cursor: pointer;
+  outline: none;
+  font-family: Microsoft YaHei;
+  color: white;
+  font-size: 15px;
+}
+.button:hover {
+  background: #5599ff;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.content img {
+  width: 200px;
+  height: 200px;
+}
+.content .title {
+  font-weight: bold;
+  font-size: large;
+}
+.content .car_info {
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+  border: 1px dashed rgb(214, 214, 214);
+  
+}
+.content .car_info td {
+    
+}
