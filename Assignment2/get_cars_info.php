@@ -27,12 +27,11 @@ for ($i = 0; $i <= $row_num; $i++) {
     echo "<tr><td class ='data'><b>price per day:</b>$PRICE_PER_DAY</td></tr>";
     echo "<tr><td class ='data'><b>avilability:</b>$AVAILABILITY</td></tr>";
     echo "<tr><td class ='data'><div><b>description:</b>$DESCRIPTION<div></td></tr>";
-    echo '<tr><td><input type="button" value="Add to cart" class="button" ';
-    echo "onclick = ";
-    echo '"window.location.href=';
-    echo "'change_cart.php?model=$MODEL";
-    echo "'";
-    echo '")></td></tr>';
+    echo "<tr><td><input type='button' value ='Add to cart' class = 'button' onclick= 'check_availability(";
+    echo '"';
+    echo $MODEL;
+    echo '"';
+    echo ")'></td></tr>";
     echo "</table></td>";
   }
   echo "</tr>";
