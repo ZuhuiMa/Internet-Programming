@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <?php
-<<<<<<< HEAD
 session_start();
 if (!isset($_SESSION['my_cart']['quantity'])) {
     $_SESSION['my_cart']['quantity'] = 0;
@@ -28,54 +27,15 @@ if (!isset($_SESSION['my_cart']['total_price'])) {
         <table id="cars_table" cellpadding="11px">
 
         </table>
-=======
-  session_start();
-  ?>
-<body onload="get_cars();">
-  
-  <div class=header>
-    <p>Car Rental Center</p>
-    <a href="http:index.php"><img src="./images/uts_logo.jpg" alt="" id="logo"></a>
-    <input type="button" value="Check Out" class="button">
-  </div>
-  <div class="content">
-      <table  id="cars_table" cellpadding="11px" >
-        
-      </table>
->>>>>>> parent of 664fe8c... 搞定查看是否可用
     </div>
 </body>
 
 </html>
 
 <script>
-<<<<<<< HEAD
-function get_cars() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
-            document.getElementById("cars_table").innerHTML = xhttp.responseText;
-        }
-    }
-    xhttp.open("GET", "get_cars_info.php", true);
-    xhttp.send();
-
-}
-
-function check_availability(model) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
-            alert(xhttp.responseText);
-        }
-        xhttp.open("GET", "./change_cart.php?model=" + model, true);
-        xhttp.send();
-    }
-}
-=======
     function get_cars() {
         var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
+        xhttp.onreadystatechange = function() {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
                 document.getElementById("cars_table").innerHTML = xhttp.responseText;
             }
@@ -84,5 +44,17 @@ function check_availability(model) {
         xhttp.send();
 
     }
->>>>>>> parent of 664fe8c... 搞定查看是否可用
+
+    function check_availability(model) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                alert('hi');
+
+            }
+            xhttp.open("GET", "./change_cart.php?model="+model, true);
+            xhttp.send();
+
+        }
+    }
 </script>
