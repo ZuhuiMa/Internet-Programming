@@ -23,6 +23,7 @@
     $state = $_POST['state'];
     $post_code = $_POST['post_code'];
     $payment_type = $_POST['payment_type'];
+    $email = $_POST['email'];
 
     //extract personal information
     $message = "
@@ -79,7 +80,7 @@ form td{
 </tr>
 </table><br>";
     $message .= "<table>
-<tr><td colspan='6'>Order details:</td></tr>
+<tr><td>Order details:</td></tr>
 <tr>
 <td>Model<td>
 <td>Mileage<td>
@@ -101,19 +102,15 @@ form td{
         $Description = $v['Description'];
         $message .= "
   <tr>
-  <td>$Model</td>
+  <td style='width: 200; height:auto'>$Model</td>
   <td></td>
   <td>$mileage</td>
   <td></td>
-  <td>$fuel_type</td>
-  <td></td>
-  <td>$seats</td>
-  <td></td>
-  <td>$price</td>
-  <td></td>
-  <td>$rent_days</td>
-  <td></td>
-  <td>$Description</td>
+  <td>$fuel_type</td><td></td>
+  <td>$seats</td><td></td>
+  <td>$price</td><td></td>
+  <td>$rent_days</td><td></td>
+  <td style='width: 400; height:auto'>$Description</td>
   </tr>";
     }
     $message .= "
@@ -131,7 +128,8 @@ form td{
     $headers .= "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-    mail($to, "Order Confirmation ", $message, $headers);
+    mail($to, "Order details", $message, $headers);
+
     session_destroy();
     ?>
 
@@ -140,5 +138,4 @@ form td{
     <a href="index.php">Go back to home page</a>
 
 </body>
-
 </html>
