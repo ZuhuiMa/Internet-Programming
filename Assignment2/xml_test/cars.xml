@@ -1,1 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?><COLLECTION><CAR id="1"><MODEL>320i</MODEL><CATEGORY>Sedan</CATEGORY><AVAILABILITY>True</AVAILABILITY><BRAND>BMW</BRAND><MODEL_YEAR>2019</MODEL_YEAR><MILEAGE>5230</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>4</SEATS><PRICE_PER_DAY>320</PRICE_PER_DAY><DESCRIPTION>The BMW 320i is the essence of riding pleasure. It was built for pulsing cities, and for all those who simply love riding motorcycles. Manoeuvrable, easy to handle and sporty at the same time – you'll get to work, the next hotspot or out of the city in a breeze.</DESCRIPTION></CAR><CAR id='2'><MODEL>Camry</MODEL><CATEGORY>Sedan</CATEGORY><AVAILABILITY>True</AVAILABILITY><BRAND>Toyota</BRAND><MODEL_YEAR>2016</MODEL_YEAR><MILEAGE>11450</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>4</SEATS><PRICE_PER_DAY>100</PRICE_PER_DAY><DESCRIPTION>The 2016 Toyota Camry is available with two conventional gas-powered engines, and one hybrid powertrain. The standard engine is a naturally aspirated 2.5-liter inline-4 that makes 203 horsepower and 184 pound-feet of torque in L, LE, SE and XLE trims.</DESCRIPTION></CAR><CAR id='3'><MODEL>Captiva</MODEL><CATEGORY>SUV</CATEGORY><AVAILABILITY>True</AVAILABILITY><BRAND>Chevrolet</BRAND><MODEL_YEAR>2018</MODEL_YEAR><MILEAGE>9800</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>7</SEATS><PRICE_PER_DAY>140</PRICE_PER_DAY><DESCRIPTION>The Chevrolet Captiva is a compact crossover SUV developed by General Motors. The first generation was developed by GM Korea, based on the GM Theta platform and derived from the S3X concept car revealed in 2004.    </DESCRIPTION></CAR><CAR id='4'><MODEL>Cherokee</MODEL><CATEGORY>SUV</CATEGORY><AVAILABILITY>False</AVAILABILITY><BRAND>Jeep</BRAND><MODEL_YEAR>2018</MODEL_YEAR><MILEAGE>8231</MILEAGE><FUEL_TYPE>petrl</FUEL_TYPE><SEATS>7</SEATS><PRICE_PER_DAY>2014</PRICE_PER_DAY><DESCRIPTION>The Jeep Cherokee is built at Belvidere Assembly Plant in Belvidere, Illinois. The Cherokee has a highway fuel economy rating of 31 miles per U.S. gallon (7.6 L/100 km; 37 mpg‑imp) and a 45% better fuel economy rating than the Liberty/Cherokee it replaced.</DESCRIPTION></CAR><CAR id='5'><MODEL>Civic</MODEL><CATEGORY>Sedan</CATEGORY><AVAILABILITY>False</AVAILABILITY><BRAND>Honda</BRAND><MODEL_YEAR>2020</MODEL_YEAR><MILEAGE>1200</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>4</SEATS><PRICE_PER_DAY>200</PRICE_PER_DAY><DESCRIPTION>The Honda Civic Sedan takes sports styling, performance, technology and fuel efficiency to a whole new level. Drive away in the ultimate Honda small car!</DESCRIPTION></CAR><CAR id='6'><MODEL>GLC</MODEL><CATEGORY>SUV</CATEGORY><AVAILABILITY>True</AVAILABILITY><BRAND>Mercedes-Benz</BRAND><MODEL_YEAR>2017</MODEL_YEAR><MILEAGE>6000</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>5</SEATS><PRICE_PER_DAY>230</PRICE_PER_DAY><DESCRIPTION>The GLC is 183.3 in (4,656 mm) long, 74.4 in (1,890 mm) wide and 64.5 in (1,638 mm) tall, with a track of 63.9 in (1,623 mm) in front and 63.7 in (1,618 mm) in the rear. Trunk volume is rated at 20.5 cu ft (580 L).    </DESCRIPTION></CAR><CAR id='7'><MODEL>Golf</MODEL><CATEGORY>Wagon</CATEGORY><AVAILABILITY>True</AVAILABILITY><BRAND>Volkswagen</BRAND><MODEL_YEAR>2017</MODEL_YEAR><MILEAGE>4830</MILEAGE><FUEL_TYPE>CNG</FUEL_TYPE><SEATS>4</SEATS><PRICE_PER_DAY>180</PRICE_PER_DAY><DESCRIPTION>The Golf is unexpectedly a fuel efficient car. It houses a highly-responsive turbocharged 1.4L TSI engine, which delivers 110kW of power and 250Nm of torque.</DESCRIPTION></CAR><CAR id='8'><MODEL>Jimny</MODEL><CATEGORY>Wagon</CATEGORY><AVAILABILITY>True</AVAILABILITY><BRAND>Suzuki</BRAND><MODEL_YEAR>2018</MODEL_YEAR><MILEAGE>19820</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>4</SEATS><PRICE_PER_DAY>230</PRICE_PER_DAY><DESCRIPTION>This new Jimny is 30mm shorter, 45mm wider and 20mm taller than before, to best balance off-road articulation and cabin space. It’s got a bigger boot, a wipe-down interior and hill-descent control.</DESCRIPTION></CAR><CAR id='9'><MODEL>Sonata</MODEL><CATEGORY>Sedan</CATEGORY><AVAILABILITY>True</AVAILABILITY><BRAND>Hyundai</BRAND><MODEL_YEAR>2016</MODEL_YEAR><MILEAGE>8901</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>4</SEATS><PRICE_PER_DAY>160</PRICE_PER_DAY><DESCRIPTION>The 2016 Hyundai Sonata has a lower profile and wider stance, coupled with a modern cabin with state-of-the-art technology and safety.</DESCRIPTION></CAR><CAR id='10'><MODEL>X-trail</MODEL><CATEGORY>SUV</CATEGORY><AVAILABILITY>False</AVAILABILITY><BRAND>Nissan</BRAND><MODEL_YEAR>2015</MODEL_YEAR><MILEAGE>16500</MILEAGE><FUEL_TYPE>petrol</FUEL_TYPE><SEATS>7</SEATS><PRICE_PER_DAY>210</PRICE_PER_DAY><DESCRIPTION>The X-Trail is one of the rare options among that crowd to offer a seven-seat arrangement on some front-drive variants, making it an even more pragmatic choice for families that often need a bit more space.</DESCRIPTION></CAR></COLLECTION>
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLECTION>
+    <CAR id="1">
+        <MODEL>320i</MODEL>
+        <CATEGORY>Sedan</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>BMW</BRAND>
+        <MODEL_YEAR>2019</MODEL_YEAR>
+        <MILEAGE>5230</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>4</SEATS>
+        <PRICE_PER_DAY>320</PRICE_PER_DAY>
+        <DESCRIPTION>The BMW 320i is the essence of riding pleasure. It was built for pulsing cities, and for all those who simply love riding motorcycles. Manoeuvrable, easy to handle and sporty at the same time – you'll get to work, the next hotspot or out of the city in a breeze.</DESCRIPTION>
+    </CAR>
+    <CAR id='2'>
+        <MODEL>Camry</MODEL>
+        <CATEGORY>Sedan</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>Toyota</BRAND>
+        <MODEL_YEAR>2016</MODEL_YEAR>
+        <MILEAGE>11450</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>4</SEATS>
+        <PRICE_PER_DAY>100</PRICE_PER_DAY>
+        <DESCRIPTION>The 2016 Toyota Camry is available with two conventional gas-powered engines, and one hybrid powertrain. The standard engine is a naturally aspirated 2.5-liter inline-4 that makes 203 horsepower and 184 pound-feet of torque in L, LE, SE and XLE trims.</DESCRIPTION>
+    </CAR>
+    <CAR id='3'>
+        <MODEL>Captiva</MODEL>
+        <CATEGORY>SUV</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>Chevrolet</BRAND>
+        <MODEL_YEAR>2018</MODEL_YEAR>
+        <MILEAGE>9800</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>7</SEATS>
+        <PRICE_PER_DAY>140</PRICE_PER_DAY>
+        <DESCRIPTION>The Chevrolet Captiva is a compact crossover SUV developed by General Motors. The first generation was developed by GM Korea, based on the GM Theta platform and derived from the S3X concept car revealed in 2004.    </DESCRIPTION>
+    </CAR>
+    <CAR id='4'>
+        <MODEL>Cherokee</MODEL>
+        <CATEGORY>SUV</CATEGORY>
+        <AVAILABILITY>False</AVAILABILITY>
+        <BRAND>Jeep</BRAND>
+        <MODEL_YEAR>2018</MODEL_YEAR>
+        <MILEAGE>8231</MILEAGE>
+        <FUEL_TYPE>petrl</FUEL_TYPE>
+        <SEATS>7</SEATS>
+        <PRICE_PER_DAY>2014</PRICE_PER_DAY>
+        <DESCRIPTION>The Jeep Cherokee is built at Belvidere Assembly Plant in Belvidere, Illinois. The Cherokee has a highway fuel economy rating of 31 miles per U.S. gallon (7.6 L/100 km; 37 mpg‑imp) and a 45% better fuel economy rating than the Liberty/Cherokee it replaced.</DESCRIPTION>
+    </CAR>
+    <CAR id='5'>
+        <MODEL>Civic</MODEL>
+        <CATEGORY>Sedan</CATEGORY>
+        <AVAILABILITY>False</AVAILABILITY>
+        <BRAND>Honda</BRAND>
+        <MODEL_YEAR>2020</MODEL_YEAR>
+        <MILEAGE>1200</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>4</SEATS>
+        <PRICE_PER_DAY>200</PRICE_PER_DAY>
+        <DESCRIPTION>The Honda Civic Sedan takes sports styling, performance, technology and fuel efficiency to a whole new level. Drive away in the ultimate Honda small car!</DESCRIPTION>
+    </CAR>
+    <CAR id='6'>
+        <MODEL>GLC</MODEL>
+        <CATEGORY>SUV</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>Mercedes-Benz</BRAND>
+        <MODEL_YEAR>2017</MODEL_YEAR>
+        <MILEAGE>6000</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>5</SEATS>
+        <PRICE_PER_DAY>230</PRICE_PER_DAY>
+        <DESCRIPTION>The GLC is 183.3 in (4,656 mm) long, 74.4 in (1,890 mm) wide and 64.5 in (1,638 mm) tall, with a track of 63.9 in (1,623 mm) in front and 63.7 in (1,618 mm) in the rear. Trunk volume is rated at 20.5 cu ft (580 L).    </DESCRIPTION>
+    </CAR>
+    <CAR id='7'>
+        <MODEL>Golf</MODEL>
+        <CATEGORY>Wagon</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>Volkswagen</BRAND>
+        <MODEL_YEAR>2017</MODEL_YEAR>
+        <MILEAGE>4830</MILEAGE>
+        <FUEL_TYPE>CNG</FUEL_TYPE>
+        <SEATS>4</SEATS>
+        <PRICE_PER_DAY>180</PRICE_PER_DAY>
+        <DESCRIPTION>The Golf is unexpectedly a fuel efficient car. It houses a highly-responsive turbocharged 1.4L TSI engine, which delivers 110kW of power and 250Nm of torque.</DESCRIPTION>
+    </CAR>
+    <CAR id='8'>
+        <MODEL>Jimny</MODEL>
+        <CATEGORY>Wagon</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>Suzuki</BRAND>
+        <MODEL_YEAR>2018</MODEL_YEAR>
+        <MILEAGE>19820</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>4</SEATS>
+        <PRICE_PER_DAY>230</PRICE_PER_DAY>
+        <DESCRIPTION>This new Jimny is 30mm shorter, 45mm wider and 20mm taller than before, to best balance off-road articulation and cabin space. It’s got a bigger boot, a wipe-down interior and hill-descent control.</DESCRIPTION>
+    </CAR>
+    <CAR id='9'>
+        <MODEL>Sonata</MODEL>
+        <CATEGORY>Sedan</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>Hyundai</BRAND>
+        <MODEL_YEAR>2016</MODEL_YEAR>
+        <MILEAGE>8901</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>4</SEATS>
+        <PRICE_PER_DAY>160</PRICE_PER_DAY>
+        <DESCRIPTION>The 2016 Hyundai Sonata has a lower profile and wider stance, coupled with a modern cabin with state-of-the-art technology and safety.</DESCRIPTION>
+    </CAR>
+    <CAR id='10'>
+        <MODEL>X-trail</MODEL>
+        <CATEGORY>SUV</CATEGORY>
+        <AVAILABILITY>False</AVAILABILITY>
+        <BRAND>Nissan</BRAND>
+        <MODEL_YEAR>2015</MODEL_YEAR>
+        <MILEAGE>16500</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>7</SEATS>
+        <PRICE_PER_DAY>210</PRICE_PER_DAY>
+        <DESCRIPTION>The X-Trail is one of the rare options among that crowd to offer a seven-seat arrangement on some front-drive variants, making it an even more pragmatic choice for families that often need a bit more space.</DESCRIPTION>
+    </CAR>
+    <CAR id='11'>
+        <MODEL>RC</MODEL>
+        <CATEGORY>Seden</CATEGORY>
+        <AVAILABILITY>False</AVAILABILITY>
+        <BRAND>Lexus</BRAND>
+        <MODEL_YEAR>2020</MODEL_YEAR>
+        <MILEAGE>100</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>4</SEATS>
+        <PRICE_PER_DAY>250</PRICE_PER_DAY>
+        <DESCRIPTION>Lexus recalls more than 6000 vehicles affected by a faulty fuel pump.</DESCRIPTION>
+    </CAR>
+    <CAR id='12'>
+        <MODEL>Captur</MODEL>
+        <CATEGORY>Wagon</CATEGORY>
+        <AVAILABILITY>True</AVAILABILITY>
+        <BRAND>Renault</BRAND>
+        <MODEL_YEAR>2019</MODEL_YEAR>
+        <MILEAGE>1100</MILEAGE>
+        <FUEL_TYPE>petrol</FUEL_TYPE>
+        <SEATS>5</SEATS>
+        <PRICE_PER_DAY>122</PRICE_PER_DAY>
+        <DESCRIPTION>You won’t spot the changes to the 2019 Renault Captur externally, but jump behind the wheel and a punchy new engine tells its own story.</DESCRIPTION>
+    </CAR>
+</COLLECTION>
